@@ -1,0 +1,52 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  height: 100%;
+}
+header {
+  font-weight: bold;
+}
+header #wrapper {
+  width: 100%;
+  background-color: #373737;
+  position: relative;
+  height: 40px;
+}
+header #wrapper a {
+  color: #fff;
+  text-decoration: none;
+}
+header #wrapper a:hover {
+  color: #acde84;
+}
+header #wrapper #navigation {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+header #wrapper #navigation ul {
+  display: inline;
+  list-style-type: none;
+}
+header #wrapper #navigation ul li {
+  float: left;
+  padding-right: 30px;
+}
+header #wrapper #user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  border-top: 1px solid #eee;
+}
+footer p {
+  padding-top: 7px;
+  float: right;
+  padding-right: 10px;
+}

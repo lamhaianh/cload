@@ -1,0 +1,31 @@
+!!!5
+html
+	head
+		title #{title}
+		link(rel='stylesheet', href="/css/bootstrap.css")
+		link(rel='stylesheet', href="/css/style.css")
+	body
+		header
+			#wrapper
+				#navigation
+					ul
+						li
+							a(href='#') Search
+						li
+							a(href='#') Posting
+						li
+							a(href='#') Bricking
+						li
+							a(href='#') Help
+				#user
+					span
+						a(href='#') Register
+					span  / 
+					span
+						a(href='#') Login
+		content
+			block search
+
+			block items
+		footer
+			p &copy Copyright by Cload - 2013
