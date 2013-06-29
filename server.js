@@ -14,7 +14,7 @@ app.configure(function() {
 
 app.get('/', function(req, res) {
 
-	res.render('layout', 
+	res.render('index', 
 		{
 			title: 'Home'
 		}
