@@ -39,6 +39,54 @@ header #wrapper #user {
   right: 10px;
   top: 10px;
 }
+content #content_top {
+  height: 80px;
+  border-bottom: 1px solid #eee;
+  display: inline-block;
+  width: 100%;
+}
+content #content_top #logo {
+  float: left;
+  width: 120px;
+}
+content #content_top #search_box {
+  float: left;
+  display: inline;
+  width: 100%;
+  max-width: 550px;
+  padding-top: 25px;
+}
+content #content_top #search_box #search_keyword {
+  width: 100%;
+  float: left;
+  max-width: 400px;
+}
+content #content_top #search_box #search_keyword input[type='text'] {
+  border: 1px solid #eee;
+  height: 25px;
+  width: 100%;
+}
+content #content_top #search_box #search_submit {
+  width: 120px;
+  float: left;
+  margin-left: 20px;
+}
+content #content_top #search_box #search_submit input[type='submit'] {
+  height: 35px;
+  width: 100px;
+}
+content #content_top #last_words {
+  width: 100%;
+  left: 750px;
+  top: 1px;
+}
+content #content_top #last_words #last_words_title {
+  top: 1px;
+}
+content #content_top #last_words #last_words_body ul {
+  display: inline-block;
+  list-style-type: none;
+}
 footer {
   width: 100%;
   position: absolute;

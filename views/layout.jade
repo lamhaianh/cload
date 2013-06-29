@@ -24,7 +24,17 @@ html
 					span
 						a(href='#') Login
 		content
-			block search
+			#content_top
+
+				#logo
+					img(src='/img/logo.png', alt='Cload')
+			
+				#search_box
+					form(method='post')
+						#search_keyword
+							input(type='text', name='keyword')
+						#search_submit
+							input(type='submit', value='Search', class='btn btn-success')
 
 			block items
 		footer
