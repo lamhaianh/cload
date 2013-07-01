@@ -2,41 +2,39 @@
 html
 	head
 		title #{title}
-		link(rel='stylesheet', href="/css/bootstrap.css")
 		link(rel='stylesheet', href="/css/style.css")
 	body
-		header
-			#wrapper
-				#navigation
-					ul
-						li
-							a(href='#') Search
-						li
-							a(href='#') Posting
-						li
-							a(href='#') Bricking
-						li
-							a(href='#') Help
-				#user
-					span
-						a(href='#') Register
-					span  / 
-					span
-						a(href='#') Login
-		content
-			#content_top
+		#container
+			#header
+				div
+					#navbar
+						ul(class='left')
+								li
+									a(href='', class='first') Home
+								li
+									a(href='') Search
+								li
+									a(href='') Post
+								li
+									a(href='') Help
 
-				#logo
-					img(src='/img/logo.png', alt='Cload')
-			
-				#search_box
-					form(method='post')
-						#search_keyword
-							input(type='text', name='keyword')
-						#search_submit
-							input(type='submit', value='Search', class='btn btn-success')
+						ul(class='right')
+							li
+								a(href='') Register
+							li(class='last')
+								a(href='') Login
+			#content
+				div
+					#top_content
+						img(class='logo', src='/img/logo.png')
+						
+						#search_form
+							form 
+								input(type='text', class='txt_keyword')
+								input(type='submit', class='btn_search')
 
-			block main_content
-				
-		footer
-			p &copy Copyright by Cload - 2013
+					#main_content
+						this is content
+			#footer
+				div
+					This is footer
