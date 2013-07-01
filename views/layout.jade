@@ -1,8 +1,10 @@
 !!!5
 html
 	head
-		title #{title}
+		title The world marketplace
 		link(rel='stylesheet', href="/css/style.css")
+		meta(http-equiv='Content-Type', content='type=text/html; charset=utf-8')
+		meta(name='keywords', content='ad, adversiting, anhmv, quang cao, rao vat, nhanh nhat')
 	body
 		#container
 			#header
@@ -15,6 +17,8 @@ html
 									a(href='') Search
 								li
 									a(href='') Post
+								li
+									a(href='') Rank
 								li
 									a(href='') Help
 
@@ -31,10 +35,15 @@ html
 						#search_form
 							form 
 								input(type='text', class='txt_keyword')
-								input(type='submit', class='btn_search')
+								input(type='submit', class='btn_search', value='Search')
 
 					#main_content
-						this is content
+						#notice
+
+						#results
+
+					#loading
+						img(src='/img/loading.gif')
 			#footer
 				div
-					This is footer
+					span(class='copyright') Copyright &copy by Cload Team - 2013
