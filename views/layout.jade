@@ -5,6 +5,8 @@ html
 		link(rel='stylesheet', href="/css/style.css")
 		meta(http-equiv='Content-Type', content='type=text/html; charset=utf-8')
 		meta(name='keywords', content='ad, adversiting, anhmv, quang cao, rao vat, nhanh nhat')
+		script(src='/js/jquery-1.10.1.js')
+		script(src='/js/main.js')
 	body
 		#container
 			#header
@@ -33,17 +35,15 @@ html
 						img(class='logo', src='/img/logo.png')
 						
 						#search_form
-							form 
-								input(type='text', class='txt_keyword')
-								input(type='submit', class='btn_search', value='Search')
-
-					#main_content
-						#notice
-
-						#results
-
-					#loading
-						img(src='/img/loading.gif')
+							form(method='POST', action='/')
+								input(type='hidden', id='searching', value='#{searching}')
+								input(type='text', id='txt_keyword', name='keywords')
+								input(type='submit', id='btn_search', value='Search')
+				div	
+					block content
 			#footer
 				div
 					span(class='copyright') Copyright &copy by Cload Team - 2013
+
+			
+
