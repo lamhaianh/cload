@@ -24,5 +24,9 @@ app.post('/', function(req, res) {
 	res.render('index', {searching: true});
 });
 
+app.get('/login', function(req, res) {
+	res.render('login', {})
+});
+
 app.listen(port);
 console.log('Server is listening on port ' + port);
